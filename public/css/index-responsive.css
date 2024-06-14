@@ -1,0 +1,137 @@
+
+@media only screen and (max-width: 1100px) {
+   .div-two .main-section .scroll-wrapper .feature-box{
+      width: calc(100% / 13);
+   }
+}
+
+
+@media only screen and (max-width: 1000px) {
+   .div-one .main-section .hero-paragraph{
+      width: 75%;
+   }
+
+   .div-one .main-section .search-form{
+      width: 70%;
+   }
+
+   .div-two .main-section .scroll-wrapper .feature-box{
+      width: calc(100% / 14);      
+   }
+
+   .div-three{
+      padding-inline: 3%;
+   }
+
+   .div-three .second-section .box-one{
+      margin-right: 10px;
+   }
+
+   .div-three .second-section .box-one .map-line{
+      height: 300px;
+   }
+}
+
+
+@media only screen and (max-width: 800px) {
+   .div-two{
+      padding-block: 120px;
+   }
+
+   .div-two .main-section .scroll-wrapper .feature-box{
+      width: calc(100% / 14.5);      
+   }
+
+   .div-three .second-section .box-one .map-line{
+      height: 250px;
+   }
+}
+
+
+@media only screen and (max-width: 700px) {
+   .div-one .main-section .hero-paragraph,
+   .div-one .main-section .search-form{
+      width: 85%;
+   }
+
+   .div-three .first-section .sub-heading{
+      margin-inline: 0px;
+   }
+
+   .div-three .second-section{
+      justify-content: center;
+   }
+
+   .div-three .second-section .box-one{
+      margin-right: 0px;
+      margin-bottom: 25px;
+   }
+
+   .div-three .second-section .box-one .map-line{
+      height: 100px;
+   }
+
+   .div-three .second-section .box-two{
+      flex: none;
+      width: 100%;
+   }
+}
+   
+
+@media only screen and (max-width: 500px) {
+   .div-one{
+      padding-block: 130px;
+   }
+
+   .div-one .main-section .hero-paragraph,
+   .div-one .main-section .search-form{
+      width: 95%;
+   }
+
+   .div-one .main-section .search-form{
+      flex-direction: column;
+   }
+
+   .div-one .main-section .search-form .input-section{
+      width: 100%;
+   }
+
+   .div-one .main-section .search-form .demacator{
+      flex: none;
+      width: 10px;
+      height: 15px;
+      margin-inline: 0px;
+      margin-block: -1px;
+   }
+
+   .div-one .main-section .search-form .demacator::before{
+      top: 50%;
+      left: 0%;
+      translate: -95% -50%;
+   }
+
+   .div-one .main-section .search-form .demacator::after{
+      top: 50%;
+      left: unset;
+      right: 0%;
+      translate: 95% -50%;
+   }
+
+   .div-one .main-section .search-form .submit-section{
+      width: 40%;
+      height: 45px;
+   }
+
+   .div-two{
+      padding-block: 80px;
+   }
+
+   .div-two .main-section .scroll-wrapper .feature-box .feature-content{
+      padding-inline: 5%;
+   }
+}
+
+
+@media only screen and (max-width: 400px) {
+   
+}
