@@ -245,6 +245,46 @@
                </section>
             </section>
          </section>
+
+         <section class="partners-section">
+            <img src="{{ url('images/partners.svg') }}" alt="Company partners image">
+         </section>
+      </div>
+
+      <div class="div-three">
+         <section class="first-section">
+            <h2 class="heading">Stay Connected</h2>
+
+            <section class="sub-heading">
+               <h3>No matter where your journey takes you</h3>
+
+               <p>
+                  Experience seamless internet connectivity on all your
+                  adventures with Tripcel eSlM, and say goodbye to costly
+                  roaming bills when you return.
+               </p>
+            </section>
+         </section>
+
+         <section class="second-section">
+            <section class="box-one">
+               <section class="map-line">
+                  <img src="{{ url('images/map-line.svg') }}" alt="Map line image">
+               </section>
+
+               <section class="map-text">
+                  <h3>Over 200</h3>
+
+                  <span>Countries</span>
+
+                  <span>Travel eSim Available</span>
+               </section>
+            </section>
+
+            <section class="box-two">
+               <img src="{{ url('images/map.svg') }}" alt="Tripcel network image">
+            </section>
+         </section>
       </div>
    </body>
 </html>

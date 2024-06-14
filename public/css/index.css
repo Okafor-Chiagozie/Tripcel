@@ -14,7 +14,7 @@
 }
 
 .div-one .main-section{
-   width: min(900px, 80%);
+   width: min(900px, 95%);
    height: auto;
    display: flex;
    flex-direction: column;
@@ -149,6 +149,7 @@
 /* Div-Two -------------------------> Start */
 /* ======================================== */
 .div-two{
+   position: relative;
    width: 100%;
    height: auto;
    display: flex;
@@ -156,6 +157,7 @@
    align-items: center;
    padding-block: 150px;
    background-color: var(--main-white);
+   overflow: visible;
 }
 
 .div-two .main-section{
@@ -240,6 +242,7 @@
 .div-two .main-section .scroll-wrapper-1 .scroll-wrapper-2 .feature-box .feature-content .heading>h3{
    flex: 1;
    color: var(--primary-color);
+   font-size: 1.2rem;
 }
 
 .div-two .main-section .scroll-wrapper-1 .scroll-wrapper-2 .feature-box .feature-content>p{
@@ -249,12 +252,143 @@
    color: var(--main-grey);
 }
 
+.div-two .partners-section{
+   position: absolute;
+   bottom: 0;
+   translate: 0% 50%;
+   width: min(700px, 90%);
+   height: auto;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
 
+.div-two .partners-section>img{
+   width: 100%;
+   height: fit-content;
+}
+/* ======================================== */
+/* Div-Two ---------------------------> End */
+/* ======================================== */
 
 
 
 /* ======================================== */
-/* Div-Two ---------------------------> End */
+/* Div-Three -----------------------> Start */
+/* ======================================== */
+.div-three{
+   width: 100%;
+   height: auto;
+   padding-top: 120px;
+   padding-bottom: 50px;
+   background-color: var(--secondary-color);
+   padding-inline: 5%;
+}
+
+.div-three .first-section{
+   width: 100%;
+   height: auto;
+   display: flex;
+   justify-content:  space-between;
+   align-items: flex-start;
+   flex-wrap: wrap;
+}
+
+.div-three .first-section .heading{
+   width: max-content;
+   font-size: 4rem;
+   letter-spacing: -1px;
+}
+
+.div-three .first-section .sub-heading{
+   width: min(450px, 80%);
+   margin-inline: 10px;
+}
+
+.div-three .first-section .sub-heading>h3{
+   margin-bottom: 5px;
+   font-size: 1.3rem;
+}
+
+.div-three .first-section .sub-heading>p{
+   color: var(--main-grey);
+}
+
+.div-three .second-section{
+   width: 100%;
+   height: auto;
+   display: flex;
+   justify-content: space-between;
+   align-items: flex-start;
+   padding-top: 30px;
+   flex-wrap: wrap;
+}
+
+.div-three .second-section .box-one{
+   width: max-content;
+   height: auto;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   margin-right: 20px;
+}
+
+.div-three .second-section .box-one .map-line{
+   width: auto;
+   height: 350px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.div-three .second-section .box-one .map-line>img{
+   width: auto;
+   max-width: 100%;
+   max-height: 100%;
+   
+}
+
+.div-three .second-section .box-one .map-text{
+   width: auto;
+   height: auto;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   padding-inline: 5px;
+}
+
+.div-three .second-section .box-one .map-text>*{
+   width: max-content;
+}
+
+.div-three .second-section .box-one .map-text>h3{
+   font-size: 1.8rem;
+}
+
+.div-three .second-section .box-one .map-text>span{
+   color: var(--main-grey);
+}
+
+.div-three .second-section .box-one .map-text>:nth-child(2){
+   margin-bottom: 10px;
+}
+
+.div-three .second-section .box-two{
+   flex: 1;
+   height: auto;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.div-three .second-section .box-two>img{
+   width: 100%;
+   height: fit-content;
+}
+/* ======================================== */
+/* Div-Three -------------------------> End */
 /* ======================================== */
 
 
