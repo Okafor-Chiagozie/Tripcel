@@ -28,6 +28,7 @@
    letter-spacing: -1px;
    margin-bottom: 15px;
    text-align: center;
+   transition: 0.3s;
 }
 
 .div-one .main-section .hero-paragraph{
@@ -36,6 +37,7 @@
    font-size: var(--rem-1-2);
    text-align: center;
    margin-bottom: 40px;
+   transition: 0.3s;
 }
 
 .div-one .main-section .search-form{
@@ -45,6 +47,7 @@
    justify-content: center;
    align-items: center;
    margin-bottom: 20px;
+   transition: 0.3s;
 }
 
 .div-one .main-section .search-form .input-section{
@@ -153,7 +156,7 @@
    border-radius: 50%;
    translate: 0% 50%;
    opacity: 1;
-   transition: 0.8s;
+   transition: 0.5s;
    z-index: -1;
 }
 
@@ -427,6 +430,7 @@
    /* background-color: #2c406c; */
    /* background-color: var(--primary-color); */
    background-color: var(--sub-secondary-color);
+   overflow: hidden;
 }
 
 .div-four .main-section{
@@ -438,6 +442,8 @@
    align-items: center;
    padding-block: 10px;
    flex-shrink: 0;
+   /* background-color: var(--sub-secondary-color); */
+   z-index: 2;
 }
 
 .div-four .main-section>h4{
@@ -488,7 +494,7 @@
    color: var(--tertiary-color);
    font-size: var(--rem-3);
    letter-spacing: -1px;
-   margin-bottom: 5px;
+   margin-bottom: 7px;
 }
 
 .div-four .main-section .scroll-wrapper-1 .scroll-wrapper-2 .main-content>h3{
@@ -503,6 +509,7 @@
 
 
 .div-four .main-section>a{
+   position: relative;
    padding-block: 10px;
    padding-inline: 20px;
    border-radius: 50px;
@@ -512,6 +519,31 @@
    background-color: var(--primary-color);
    border: 2px solid var(--main-grey);
    margin-bottom: 20px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   overflow: hidden;
+   z-index: 1;
+}
+
+.div-four .main-section>a::before{
+   content: "";
+   position: absolute;
+   bottom: 0;
+   width: 0%;
+   height: 0%;
+   background-color: var(--main-brown);
+   border-radius: 50%;
+   translate: 0% 50%;
+   opacity: 1;
+   transition: 0.5s;
+   z-index: -1;
+}
+
+.div-four .main-section>a:hover::before{
+   width: 150%;
+   height: 150px;
+   opacity: 0;
 }
 
 .div-four .main-section .scroll-indicator-section{
@@ -535,12 +567,13 @@
    background-color: var(--second-grey);
 }
 
-.div-four .country{
+.div-four .country-box{
    position: absolute;
-   top: 10%;
-   left: 20%;
+   top: var(--top);
+   left: var(--left);
+   rotate: var(--rotate);
    width: auto;
-   height: 32px;
+   height: 40px;
    display: flex;
    justify-content: center;
    align-items: center;
@@ -548,41 +581,58 @@
    padding-inline: 5px;
    overflow: hidden;
    border-radius: 50px;
+   animation: dance linear infinite alternate;
+   animation-duration: var(--duration);
+   z-index: 1;
 }
 
-.div-four .country>*{
-   margin-inline: px;
+.div-four .country-box>*{
+   margin-inline: 5px;
 }
 
-.div-four .country .image-section{
-   width: 20px;
-   height: 20px;
+.div-four .country-box .image-section{
+   width: 25px;
+   height: 25px;
    display: flex;
    justify-content: center;
    align-items: center;
    border-radius: 50%;
 }
 
-.div-four .country .image-section>img{
+.div-four .country-box .image-section>img{
    width: 100%;
    height: fit-content;
 }
 
-.div-four .country .country-text{
+.div-four .country-box .country-text{
    color: var(--main-grey);
+   font-size: var(--rem-1-2);
 }
 
-
-
+@keyframes dance {
+   to{
+      rotate: 0deg;
+   }
+}
 /* ======================================== */
 /* Div-Four --------------------------> End */
 /* ======================================== */
 
 
 
+/* ======================================== */
+/* Div-Five ------------------------> Start */
+/* ======================================== */
+.div-five{
+   width: 100%;
+   height: auto;
+   padding-block: 100px;
+}
 
 
-
+/* ======================================== */
+/* Div-Five --------------------------> End */
+/* ======================================== */
 
 
 

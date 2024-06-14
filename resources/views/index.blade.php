@@ -341,13 +341,139 @@
             </section>
          </section>
 
-         <section class="country">
+         <section class="country-box" style="--left: 45%; --top: 2%; --rotate: -10deg; --duration: 3s">
+            <section class="image-section">
+               <img src="{{ url('images/countries/finland.svg') }}" alt="Country image">
+            </section>
+
+            <span class="country-text">Finland</span>
+         </section>
+         <section class="country-box" style="--left: 15%; --top: 0%; --rotate: 15deg; --duration: 3s">
             <section class="image-section">
                <img src="{{ url('images/countries/india.svg') }}" alt="Country image">
             </section>
 
             <span class="country-text">India</span>
          </section>
+         <section class="country-box" style="--left: 0%; --top: 15%; --rotate: 10deg; --duration: 3s">
+            <section class="image-section">
+               <img src="{{ url('images/countries/cyprus.svg') }}" alt="Country image">
+            </section>
+
+            <span class="country-text">Cyprus</span>
+         </section>
+         <section class="country-box" style="--left: 15%; --top: 20%; --rotate: -20deg; --duration: 3s">
+            <section class="image-section">
+               <img src="{{ url('images/countries/uk.svg') }}" alt="Country image">
+            </section>
+
+            <span class="country-text">United Kingdom</span>
+         </section>
+         <section class="country-box" style="--left: 0%; --top: 40%; --rotate: -20deg; --duration: 3s">
+            <section class="image-section">
+               <img src="{{ url('images/countries/china.svg') }}" alt="Country image">
+            </section>
+
+            <span class="country-text">China</span>
+         </section>
+         <section class="country-box" style="--left: 15%; --top: 45%; --rotate: 25deg; --duration: 5s">
+            <section class="image-section">
+               <img src="{{ url('images/countries/isreal.svg') }}" alt="Country image">
+            </section>
+
+            <span class="country-text">Isreal</span>
+         </section>
+         <section class="country-box" style="--left: 0%; --top: 80%; --rotate: 15deg; --duration: 3s">
+            <section class="image-section">
+               <img src="{{ url('images/countries/us.svg') }}" alt="Country image">
+            </section>
+
+            <span class="country-text">United States</span>
+         </section>
+         <section class="country-box" style="--left: 15%; --top: 70%; --rotate: -25deg; --duration: 5s">
+            <section class="image-section">
+               <img src="{{ url('images/countries/maldives.svg') }}" alt="Country image">
+            </section>
+
+            <span class="country-text">Maldives</span>
+         </section>
+         <section class="country-box" style="--left: 25%; --top: 90%; --rotate: -25deg; --duration: 5s">
+            <section class="image-section">
+               <img src="{{ url('images/countries/switzerland.svg') }}" alt="Country image">
+            </section>
+
+            <span class="country-text">Switzerland</span>
+         </section>
+
+
+
+         <section class="country-box" style="--left: 55%; --top: 90%; --rotate: -25deg; --duration: 5s">
+            <section class="image-section">
+               <img src="{{ url('images/countries/poland.svg') }}" alt="Country image">
+            </section>
+
+            <span class="country-text">Poland</span>
+         </section>
+         <section class="country-box" style="--left: 75%; --top: 80%; --rotate: 20deg; --duration: 3s">
+            <section class="image-section">
+               <img src="{{ url('images/countries/canada.svg') }}" alt="Country image">
+            </section>
+
+            <span class="country-text">Canada</span>
+         </section>
+         <section class="country-box" style="--left: 90%; --top: 85%; --rotate: -20deg; --duration: 3s">
+            <section class="image-section">
+               <img src="{{ url('images/countries/germany.svg') }}" alt="Country image">
+            </section>
+
+            <span class="country-text">Germany</span>
+         </section>
+         <section class="country-box" style="--left: 83%; --top: 60%; --rotate: -25deg; --duration: 5s">
+            <section class="image-section">
+               <img src="{{ url('images/countries/albania.svg') }}" alt="Country image">
+            </section>
+
+            <span class="country-text">Albania</span>
+         </section>
+         <section class="country-box" style="--left: 95%; --top: 55%; --rotate: 15deg; --duration: 3s">
+            <section class="image-section">
+               <img src="{{ url('images/countries/isreal.svg') }}" alt="Country image">
+            </section>
+
+            <span class="country-text">Isreal</span>
+         </section>
+         <section class="country-box" style="--left: 78%; --top: 35%; --rotate: -10deg; --duration: 3s">
+            <section class="image-section">
+               <img src="{{ url('images/countries/nigeria.svg') }}" alt="Country image">
+            </section>
+
+            <span class="country-text">Nigeria</span>
+         </section>
+         <section class="country-box" style="--left: 92%; --top: 30%; --rotate: -25deg; --duration: 5s">
+            <section class="image-section">
+               <img src="{{ url('images/countries/netherland.svg') }}" alt="Country image">
+            </section>
+
+            <span class="country-text">Netherland</span>
+         </section>
+         <section class="country-box" style="--left: 70%; --top: 15%; --rotate: 25deg; --duration: 5s">
+            <section class="image-section">
+               <img src="{{ url('images/countries/south-africa.svg') }}" alt="Country image">
+            </section>
+
+            <span class="country-text">South_Africa</span>
+         </section>
+         <section class="country-box" style="--left: 90%; --top: 5%; --rotate: -15deg; --duration: 3s">
+            <section class="image-section">
+               <img src="{{ url('images/countries/russia.svg') }}" alt="Country image">
+            </section>
+
+            <span class="country-text">Russia</span>
+         </section>
+      </div>
+
+      <div class="div-five">
+
       </div>
 
       <script src="{{ url('js/index.js') }}"></script>
