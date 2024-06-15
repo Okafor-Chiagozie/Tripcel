@@ -18,6 +18,7 @@
    --main-brown: #bb764d;
    --main-grey: #475467;
    --second-grey: silver;
+   --light-grey: #f0f2f9;
    
    --rem-4: 4rem;
    --rem-3-5: 3.5rem;
@@ -35,6 +36,7 @@
 }
 
 body{
+   position: relative;
    scroll-behavior: smooth;
    position: relative;
    width: 100%;

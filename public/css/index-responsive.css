@@ -30,6 +30,14 @@
    .div-three .second-section .box-one .map-line{
       height: 300px;
    }
+
+   .div-five .work-1 .text-section{
+      margin-bottom: 50px;
+   }
+
+   .div-five .work-2{
+      flex-direction: column;
+   }
 }
 
 
@@ -135,6 +143,10 @@
 
    .div-two .main-section .scroll-wrapper .feature-box .feature-content{
       padding-inline: 5%;
+   }
+
+   .div-five>*{
+      padding-block: 50px;
    }
 }
 

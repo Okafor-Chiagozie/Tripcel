@@ -2,14 +2,44 @@
 /* Div-One -------------------------> Start */
 /* ======================================== */
 .div-one{
+   position: relative;
    width: 100%;
-   height: auto;
+   min-height: 100vh;
    padding-block: 150px;
    display: flex;
    flex-direction: column;
    justify-content: center;
    align-items: center;
-   background-color: var(--primary-color);
+   /* background-color: var(--primary-color); */
+   background: url(../images/hero-pattern-1.svg), url(../images/hero-pattern-2.svg) var(--primary-color);
+   background-size: 15%, 14%;
+   background-position: 0% 45%, 100% 45%;
+   background-repeat: no-repeat;
+   z-index: 6;
+}
+
+.div-one::before{
+   content: "";
+   position: absolute;
+   top: 0%;
+   left: 20%;
+   width: 12%;
+   height: 12%;
+   background: url(../images/hero-pattern-2.svg) no-repeat;
+   background-size: 100%;
+   rotate: -120deg;
+}
+
+.div-one::after{
+   content: "";
+   position: absolute;
+   top: 3%;
+   left: 75%;
+   width: 12%;
+   height: 12%;
+   background: url(../images/hero-pattern-2.svg) no-repeat;
+   background-size: 100%;
+   rotate: -60deg;
 }
 
 .div-one .main-section{
@@ -19,6 +49,7 @@
    flex-direction: column;
    justify-content: center;
    align-items: center;
+   overflow: hidden;
 }
 
 .div-one .main-section .hero-heading{
@@ -184,6 +215,7 @@
    padding-block: 150px;
    background-color: var(--main-white);
    overflow: visible;
+   z-index: 6;
 }
 
 .div-two .main-section{
@@ -192,6 +224,7 @@
    display: flex;
    justify-content: flex-start;
    align-items: center;
+   z-index: 2;
    /* border: 1px solid red; */
 }
 
@@ -202,7 +235,7 @@
    display: flex;
    justify-content: flex-start;
    align-items: center;
-   /* animation: 40s infinite-scroll linear infinite; */
+   animation: 50s infinite-scroll linear infinite;
 }
 
 @keyframes infinite-scroll {
@@ -273,6 +306,29 @@
    color: var(--main-grey);
 }
 
+.div-two .globe-section{
+   position: absolute;
+   top: 0%;
+   width: 120%;
+   height: auto;
+   padding-bottom: 15%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-top-left-radius: 50%;
+   border-top-right-radius: 50%;
+   background-color: var(--main-white);
+   translate: 0% -25%;
+   z-index: 1;
+   /* border: 2px solid red; */
+   /* background-color: pink; */
+}
+
+.div-two .globe-section>img{
+   width: calc(100% - 20%);
+   height: fit-content;
+}
+
 .div-two .partners-section{
    position: absolute;
    bottom: 0;
@@ -304,6 +360,8 @@
    padding-bottom: 50px;
    background-color: var(--secondary-color);
    padding-inline: 5%;
+   overflow: hidden;
+   z-index: 5;
 }
 
 .div-three .first-section{
@@ -431,6 +489,7 @@
    /* background-color: var(--primary-color); */
    background-color: var(--sub-secondary-color);
    overflow: hidden;
+   z-index: 6;
 }
 
 .div-four .main-section{
@@ -626,12 +685,235 @@
 .div-five{
    width: 100%;
    height: auto;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: flex-start;
+   background-color: var(--light-grey);
+   /* margin-bottom: -300px; */
+   overflow: hidden;
+}
+
+.div-five>*{
    padding-block: 100px;
+   width: 100%;
+   height: auto;
+   overflow: hidden;
+}
+
+.div-five .work-1{
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+   flex-wrap: wrap;
+}
+
+.div-five .work-1 .text-section{
+   width: min(500px, 95%);
+   height: auto;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: flex-start;
+   padding-inline: 2.5%;
+   z-index: 4;
+}
+
+.div-five .work-1 .text-section>h2{
+   font-size: var(--rem-3-5);
+   margin-bottom: 15px;
+   color: var(--primary-color);
+}
+
+.div-five .work-1 .text-section>h3{
+   font-size: var(--rem-1-3);
+   margin-bottom: 5px;
+   color: rgb(73, 72, 72);
+}
+
+.div-five .work-1 .text-section>p{
+   color: var(--main-grey);
+   margin-bottom: 15px;
+}
+
+.div-five .work-1 .text-section>a{
+   padding-block: 10px;
+   padding-inline: 20px;
+   border-radius: 50px;
+   background-color: var(--primary-color);
+   color: var(--main-white);
+   text-decoration: none;
+}
+
+.div-five .work-1 .image-section{
+   position: relative;
+   width: min(500px, 95%);
+   height: auto;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   overflow: visible;
+   z-index: 3;
+}
+
+.div-five .work-1 .image-section>video{
+   position: absolute;
+   top: 50%;
+   translate: 0% -50%;
+   width: 300%;
+}
+
+.div-five .work-1 .image-section .image-box{
+   position: relative;
+   width: min(230px, 90%);
+   height: auto;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: var(--main-white);
+   overflow: hidden;
+   border-radius: 20px;
+}
+
+.div-five .work-1 .image-section .image-box>img{
+   width: 100%;
+   height: fit-content;
+   z-index: 2;
+}
+
+.div-five .work-1 .image-section .image-box .screen{
+   position: absolute;
+   top: 0%;
+   z-index: 1;
+}
+
+
+.div-five .work-2{
+   flex-direction: column-reverse;
+}
+
+.div-five .work-2 .image-section{
+   margin-bottom: 50px;
+   rotate: 90deg;
+}
+
+
+.div-five .work-3{
+   flex-direction: row-reverse;
+}
+
+
+.div-five .work-4{
+   flex-direction: column;
+}
+
+.div-five .work-4 .text-section{
+   margin-bottom: 50px;
+}
+
+
+
+.motion-image{
+   position: absolute;
+   top: 500px;
+   /* bottom: 0%; */
+   /* right: 0%; */
+   width: min(500px, 95%);
+   height: auto;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   overflow: visible;
+   z-index: 2;
+   /* z-index: 10; */
+}
+
+.motion-image>video{
+   position: absolute;
+   top: 50%;
+   translate: 0% -50%;
+   width: 300%;
+   display: none;
+}
+
+.motion-image .image-box{
+   position: relative;
+   width: min(230px, 90%);
+   height: auto;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: var(--main-white);
+   overflow: hidden;
+   border-radius: 20px;
+}
+
+.motion-image .image-box>img{
+   width: 100%;
+   height: fit-content;
+   z-index: 2;
+}
+
+.motion-image .image-box .screen{
+   position: absolute;
+   top: 0%;
+   z-index: 1;
 }
 
 
 /* ======================================== */
 /* Div-Five --------------------------> End */
+/* ======================================== */
+
+
+
+/* ======================================== */
+/* Div-Six -------------------------> Start */
+/* ======================================== */
+.div-six{
+   width: 100%;
+   height: auto;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   padding-block: 100px;
+}
+
+.div-six>h2{
+   font-size: var(--rem-3-5);
+   color: var(--primary-color);
+}
+
+.div-six .main-section{
+   width: 100%;
+   height: auto;
+   min-height: 300px;
+}
+
+/* ======================================== */
+/* Div-Six ---------------------------> End */
+/* ======================================== */
+
+
+
+/* ======================================== */
+/* Interssection Class names -------> Start */
+/* ======================================== */
+.float-up{
+   translate: 0px 50px;
+}
+
+.float-down{
+   translate: 0px -50px;
+}
+
+.normalize{
+   border-radius: 0% !important;
+   translate: 0% 0% !important;
+}
+/* ======================================== */
+/* Interssection Class names ---------> End */
 /* ======================================== */
 
 

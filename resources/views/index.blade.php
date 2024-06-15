@@ -13,16 +13,16 @@
    </head>
 
    <body>
-      <div class="div-one">
+      <div class="div-one" id="div-one">
          <section class="main-section">
-            <h1 class="hero-heading">Connect Beyond Borders</h1>
+            <h1 class="hero-heading float-up" id="hero-heading">Connect Beyond Borders</h1>
 
-            <p class="hero-paragraph">
+            <p class="hero-paragraph float-up">
                Experience seamless communication in over 200 countries with our Travel eSIM. 
                Simple, secure, and made for the global explorer.
             </p>
 
-            <form action="#" method="get" class="search-form">
+            <form action="#" method="get" class="search-form float-up">
                <section class="input-section">
                   <section class="search-icon">
                      <img src="{{ url('images/search-icon.svg') }}" alt="Search icon">
@@ -40,7 +40,7 @@
          </section>
       </div>
 
-      <div class="div-two">
+      <div class="div-two" id="div-two">
          <section class="main-section">
             <section class="scroll-wrapper">
                {{-- First set --}}
@@ -247,13 +247,17 @@
             </section>
          </section>
 
+         <section class="globe-section descend">
+            <img src="{{ url('images/hero-globe.svg') }}" alt="Globe image">
+         </section>
+
          <section class="partners-section">
             <img src="{{ url('images/partners.svg') }}" alt="Company partners image">
          </section>
       </div>
 
-      <div class="div-three">
-         <section class="first-section">
+      <div class="div-three" id="div-three">
+         <section class="first-section float-up">
             <h2 class="heading">Stay Connected</h2>
 
             <section class="sub-heading">
@@ -267,7 +271,7 @@
             </section>
          </section>
 
-         <section class="second-section">
+         <section class="second-section float-down">
             <section class="box-one">
                <section class="map-line">
                   <img src="{{ url('images/map-line.svg') }}" alt="Map line image">
@@ -288,7 +292,7 @@
          </section>
       </div>
 
-      <div class="div-four">
+      <div class="div-four" id="div-four">
          <section class="main-section">
             <h4>BENEFITS</h4>
 
@@ -473,9 +477,128 @@
       </div>
 
       <div class="div-five">
+         <section class="work-1">
+            <section class="text-section float-up">
+               <h2>How it Works</h2>
 
+               <h3>Check Compatibility and Purchase</h3>
+
+               <p>
+                  Make sure your device works with eSlM before you buy a
+                  data plan. Activating our plans is instant on unlocked
+                  iPhones and Androids with built-in eSlM chips. For
+                  confirmation, look at the eSlM Device List.
+               </p>
+
+               <a href="#">Check your Phone Compatibility</a>
+            </section>
+
+            <section class="image-section float-up" id="point-1">
+               <video loop muted autoplay autobuffer>
+                  <source src="{{ url('videos/clay-animation.mp4') }}" type="video/mp4">
+               </video>
+
+               <section class="image-box">
+                  <img src="{{ url('images/empty-phone-frame.svg') }}" alt="How it works">
+                  <img class="screen" src="{{ url('images/phone-screen-1.svg') }}" alt="How it works">
+               </section>
+            </section>
+         </section>
+         
+         <section class="work-1 work-2">
+            <section class="text-section float-up">
+               <h3>Choose a Plan</h3>
+
+               <p>
+                  Choose either a monthly or a prepaid data plan that will
+                  work for you in the area you are going to. See our eSlM
+                  Plans & Pricing page for more options.
+               </p>
+            </section>
+
+            <section class="image-section float-up" id="point-2">
+               <video loop muted autoplay autobuffer>
+                  <source src="{{ url('videos/clay-animation.mp4') }}" type="video/mp4">
+               </video>
+
+               <section class="image-box">
+                  <img src="{{ url('images/empty-phone-frame.svg') }}" alt="How it works">
+                  <img class="screen" src="{{ url('images/phone-screen-1.svg') }}" alt="How it works">
+               </section>
+            </section>
+         </section>
+         
+         <section class="work-1 work-3">
+            <section class="text-section float-up">
+               <h3>Scan QR Code</h3>
+
+               <p>
+                  Use your smartphone or another eSlM-compatible
+                  device to scan the QR code sent via email.
+               </p>
+            </section>
+
+            <section class="image-section float-up" id="point-3">
+               <video loop muted autoplay autobuffer>
+                  <source src="{{ url('videos/clay-animation.mp4') }}" type="video/mp4">
+               </video>
+
+               <section class="image-box">
+                  <img src="{{ url('images/empty-phone-frame.svg') }}" alt="How it works">
+                  <img class="screen" src="{{ url('images/phone-screen-3.svg') }}" alt="How it works">
+               </section>
+            </section>
+         </section>
+         
+         <section class="work-1 work-4">
+            <section class="text-section float-up">
+               <h3>Connect to 4G or 5G/LTE</h3>
+
+               <p>
+                  Simply follow the on-screen instructions to add your new
+                  international data plan. It is really that easy! As soon as
+                  you land, go online because your phone will connect to
+                  the internet network automatically. Experience how easy
+                  and quick Tricep•s eSlM connectivity is.
+               </p>
+            </section>
+
+            <section class="image-section float-up" id="point-4">
+               <video loop muted autoplay autobuffer>
+                  <source src="{{ url('videos/clay-animation.mp4') }}" type="video/mp4">
+               </video>
+
+               <section class="image-box">
+                  <img src="{{ url('images/empty-phone-frame.svg') }}" alt="How it works">
+                  <img class="screen" src="{{ url('images/phone-screen-4.svg') }}" alt="How it works">
+               </section>
+            </section>
+         </section>
+
+
+         <section class="motion-image" id="motion-image">
+            <video loop muted autoplay autobuffer>
+               <source src="{{ url('videos/clay-animation.mp4') }}" type="video/mp4">
+            </video>
+
+            <section class="image-box">
+               <img src="{{ url('images/empty-phone-frame.svg') }}" alt="How it works">
+               <img class="screen" src="{{ url('images/phone-screen-4.svg') }}" alt="How it works">
+            </section>
+         </section>
       </div>
 
+
+      <div class="div-six">
+         <h2>Words From Our Customers</h2>
+
+         <section class="main-section">
+
+         </section>
+      </div>
+
+
+      {{-- <script defer src="{{ url('js/image-motion.js') }}"></script> --}}
       <script src="{{ url('js/index.js') }}"></script>
       <script src="{{ url('js/carousel.js') }}"></script>
    </body>
